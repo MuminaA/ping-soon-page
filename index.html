@@ -30,61 +30,57 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="hero">
-      <img src="images/logo.svg" class="logo" />
-      <h1>We are launching <span>soon!</span></h1>
+    <main>
+      <div class="hero">
+        <img src="images/logo.svg" class="logo" alt="" />
+        <h1>We are launching <span>soon!</span></h1>
 
-      <p>Subscribe and get notified</p>
+        <p>Subscribe and get notified</p>
 
-      <div class="input-submission">
-        <div class="input-button">
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Your email addess..."
-            required
-          />
-
+        <div class="input-submission">
           <div class="input-button">
-            <button type="submit" class="validate">Notify Me</button>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Your email addess..."
+              required
+            />
+
+            <div class="input-button">
+              <button type="submit" class="validate">Notify Me</button>
+            </div>
           </div>
+          <div id="result"></div>
         </div>
-        <div id="result"></div>
-      </div>
 
-      <div>
-        <img
-          src="images/illustration-dashboard.png"
-          class="illustration-dashboard"
-        />
+        <div>
+          <img
+            src="images/illustration-dashboard.png"
+            class="illustration-dashboard"
+            alt="dashboard illustration"
+          />
+        </div>
       </div>
-
-      <footer>
-        <ul class="socials">
-          <div class="facebook">
-            <li>
-              <a><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-          </div>
-          <div class="twitter">
-            <li>
-              <a><i class="fa-brands fa-twitter"></i></a>
-            </li>
-          </div>
-          <div class="instagram">
-            <li>
-              <a><i class="fa-brands fa-instagram"></i></a>
-            </li>
-          </div>
-        </ul>
-        <div class="copywrite">&copy;Copyright Ping. All rights reserved.</div>
-        <!-- <p class="attribution">
+    </main>
+    <footer>
+      <ul class="socials">
+        <li class="facebook">
+          <a><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li class="twitter">
+          <a><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li class="instagram">
+          <a><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+      <div class="copywrite">&copy;Copyright Ping. All rights reserved.</div>
+      <!-- <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
       </p> -->
-      </footer>
-    </div>
+    </footer>
 
     <script src="index.js"></script>
 

@@ -9,6 +9,7 @@ document.querySelector("button").addEventListener("click", function () {
     result.innerHTML = "<em>Please provide a vaild email address</em>";
     result.style.color = "hsl(354, 100%, 66%)";
     input.style.borderColor = "hsl(354, 100%, 66%)";
+    result.style.padding = "2% 0 0 15%";
   }
 
   if (input.value === "") {
@@ -16,6 +17,7 @@ document.querySelector("button").addEventListener("click", function () {
       "<em>Whoops! It looks like you forgot to add your email</em>";
     result.style.color = "hsl(354, 100%, 66%)";
     input.style.borderColor = "hsl(354, 100%, 66%)";
+    result.style.padding = "2% 0 0 3%";
   }
 
   if (mediaQueryList.matches && !emailRegex.test(input.value)) {
@@ -23,7 +25,6 @@ document.querySelector("button").addEventListener("click", function () {
     input.style.position = "realtive";
     result.style.position = "absolute";
     result.style.top = "30%";
-    result.style.padding = "2% 0 0 15%";
     document.querySelector("button").style.marginTop = "10%";
   } // else {
   //     console.log("It doesn't match.");

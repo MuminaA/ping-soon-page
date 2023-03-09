@@ -76,11 +76,18 @@ button {
 /* img  */
 
 .illustration-dashboard {
-  block-size: 22rem;
-  margin-bottom: 10%;
+  block-size: 25rem;
+  margin-bottom: 6%;
 }
 
-/* socials */
+/* socials/footer */
+
+footer {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .socials {
   display: flex;
