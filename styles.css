@@ -1,114 +1,204 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
 body {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 1.5em;
-    margin:0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2%
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
 }
 
 /* title  */
 
 .logo {
-    margin-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 h1 {
-    color: hsl(0, 0%, 59%);
-    margin-bottom: .5%;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 0.5%;
 }
 
 span {
-    color: hsl(209, 33%, 12%);
-    font-weight: 700;
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
 }
 
 p {
-    font-size: .7em;
-    font-weight: 600;
-    margin-bottom: 2%;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-bottom: 2%;
+  color: hsl(209, 33%, 12%);
 }
 
 /* submission  */
 
 .input-submission {
- margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 
-button {
-    background-color: hsl(223, 87%, 63%);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 13px 35px 11px 35px;
-    font-size: .6em;
-    font-weight: 600;
-    box-shadow: 0px 3px 7px hsl(223, 100%, 88%);
+div .input-button {
+  display: inline;
 }
 
 input {
-    border-radius: 25px;
-    border-color: rgb(212, 212, 212);
-    border-width: 1px;
-    padding: 2px 35px 5px 25px;
+  border-radius: 25px;
+  border-color: hsl(223, 100%, 88%);
+  border-width: 1px;
+  padding: 10px 130px 10px 25px;
+  font-size: 0.6em;
+}
+
+button {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 13px 35px 11px 35px;
+  font-size: 0.6em;
+  font-weight: 600;
+  box-shadow: 0px 3px 7px hsl(223, 100%, 88%);
+  position: static;
 }
 
 ::placeholder {
-    color: rgb(212, 212, 212);
-    font-size: .6em;
+  color: hsl(223, 100%, 88%);
+  font-size: 0.9em;
 }
 
 /* img  */
 
-.illustration-dashboard{
-    block-size: 22rem;
-    margin-bottom: 10%;
+.illustration-dashboard {
+  block-size: 22rem;
+  margin-bottom: 10%;
 }
 
 /* socials */
 
 .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 5%;
-    color: hsl(223, 87%, 63%);
-    padding: 0;
-    font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 5%;
+  color: hsl(223, 87%, 63%);
+  padding: 0;
+  font-size: 16px;
 }
 
 .facebook {
-    border: 1px solid hsl(0, 0%, 75%);
-    border-radius: 100%;
-    padding: 4px 12px 4px 12px;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 100%;
+  padding: 4px 12px 4px 12px;
 }
 
 .twitter {
-    border: 1px solid hsl(0, 0%, 75%);
-    border-radius: 100%;
-    padding: 4px 9px 4px 9px;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 100%;
+  padding: 4px 9px 4px 9px;
 }
 
 .instagram {
-    border: 1px solid hsl(0, 0%, 75%);
-    border-radius: 100%;
-    padding: 4px 10px 4px 10px;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 100%;
+  padding: 4px 10px 4px 10px;
 }
 
 /* copywrite */
 
 .copywrite {
-    color: hsl(0, 0%, 59%);
-    font-size: .6em;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.6em;
+}
+
+/* hover states */
+button:hover {
+  background-color: hsl(223, 79%, 68%);
+}
+
+.facebook:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+.twitter:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+.instagram:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+/* error states */
+#result {
+  padding: 1% 0 0 5%;
+  font-size: 0.5em;
 }
 
 /* responsiveness  */
 
+@media screen and (max-width: 375px) {
+  body {
+    padding: 50px 20px;
+  }
+  .logo {
+    block-size: 2.1em;
+    padding-bottom: 10%;
+  }
+
+  h1 {
+    font-size: 1em;
+    padding-bottom: 4%;
+  }
+
+  p {
+    font-size: 0.5em;
+    padding-bottom: 10%;
+  }
+
+  input {
+    padding: 10px 90px 10px 30px;
+    margin-bottom: 3%;
+  }
+
+  button {
+    padding: 13px 115px 11px 115px;
+    margin-bottom: 10%;
+    /* margin-top: 10%; */
+  }
+
+  .illustration-dashboard {
+    block-size: 13rem;
+    margin-bottom: 35%;
+  }
+
+  .socials {
+    margin-bottom: 10%;
+  }
+
+  .copywrite {
+    font-size: 0.5em;
+  }
+
+  /* error states */
+  /* input {
+    position: relative;
+  }
+  #result {
+    position: absolute;
+    top: 30%;
+    padding: 2% 0 0 15%;
+  } */
+}
