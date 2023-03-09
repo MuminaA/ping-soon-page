@@ -7,20 +7,25 @@ const mediaQueryList = window.matchMedia("only screen and (max-width: 375px");
 document.querySelector("button").addEventListener("click", function () {
   if (!emailRegex.test(input.value)) {
     result.innerHTML = "<em>Please provide a vaild email address</em>";
-    result.style.color = "hsl(354, 100%, 66%)"
-    input.style.borderColor = "hsl(354, 100%, 66%)"
+    result.style.color = "hsl(354, 100%, 66%)";
+    input.style.borderColor = "hsl(354, 100%, 66%)";
+  }
+
+  if (input.value === "") {
+    result.innerHTML =
+      "<em>Whoops! It looks like you forgot to add your email</em>";
+    result.style.color = "hsl(354, 100%, 66%)";
+    input.style.borderColor = "hsl(354, 100%, 66%)";
   }
 
   if (mediaQueryList.matches && !emailRegex.test(input.value)) {
-    console.log("It matches!");
-    input.style.position = 'realtive';
-    result.style.position = 'absolute';
-    result.style.top = '30%';
-    result.style.padding = '2% 0 0 15%';
+    // console.log("It matches!");
+    input.style.position = "realtive";
+    result.style.position = "absolute";
+    result.style.top = "30%";
+    result.style.padding = "2% 0 0 15%";
     document.querySelector("button").style.marginTop = "10%";
- } else {
-    console.log("It doesn't match.");
- }
+  } // else {
+  //     console.log("It doesn't match.");
+  //  }
 });
-
-

@@ -119,6 +119,7 @@ button {
 }
 
 /* hover states */
+
 button:hover {
   background-color: hsl(223, 79%, 68%);
 }
@@ -142,6 +143,7 @@ button:hover {
 }
 
 /* error states */
+
 #result {
   padding: 1% 0 0 5%;
   font-size: 0.5em;
@@ -176,7 +178,6 @@ button:hover {
   button {
     padding: 13px 115px 11px 115px;
     margin-bottom: 10%;
-    /* margin-top: 10%; */
   }
 
   .illustration-dashboard {
@@ -191,14 +192,4 @@ button:hover {
   .copywrite {
     font-size: 0.5em;
   }
-
-  /* error states */
-  /* input {
-    position: relative;
-  }
-  #result {
-    position: absolute;
-    top: 30%;
-    padding: 2% 0 0 15%;
-  } */
 }
